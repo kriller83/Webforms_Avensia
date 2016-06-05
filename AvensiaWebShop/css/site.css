@@ -1,0 +1,70 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+
+.smoothScroll {
+    text-decoration: none;
+    color: #00AEEF;
+}
+
+    .smoothScroll:hover, .smoothScroll:active .smoothScroll:focus .smoothScroll:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: darkgray; /*not to bright? - Adriana*/
+}
+
+.loggatext {
+    color: darkgray;
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.loggatext a {
+    color: gray;
+}
+
+.loggatext span {
+    color: #00AEEF;
+}
+
+.companyName {
+        color: #00AEEF;
+}
+
+.btn-info {
+    background-color: #00AEEF;
+    background-color: #00AEEF;
+}
+
+.verticalLine {
+    margin: 10px 0;
+    border-top: 2px solid #00AEEF;
+}
+
+.errorTextRed {
+    color: red;
+}
+
+.scrollup {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 65px;
+    right: 15px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../Images/Scroll_Top_Icon.png') no-repeat;
+   
+}

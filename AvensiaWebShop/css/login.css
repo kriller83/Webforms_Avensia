@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.loginForm {
+    padding-top: 20px;    
+}
+
+.loginForm  .row {
+    padding: 5px;
+}
+
+.loginForm .row > div {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.loginForm .row > div [type=text], .loginForm .row > div [type=password] {
+    width: 220px;
+}
+.txtValidation {
+    color: red;
+}

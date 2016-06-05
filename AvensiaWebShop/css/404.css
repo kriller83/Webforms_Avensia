@@ -1,0 +1,19 @@
+﻿.errorText {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#logga {
+
+}
+
+.btn-default {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+
+#errorImage {
+    padding-left: 10px;
+}
+

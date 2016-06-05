@@ -1,0 +1,41 @@
+﻿.basket input[type=text] {
+    width: 30px;
+}
+.kassaInfo input[type=text] {
+    width: 250px;
+}
+.txtValidation {
+    color: red;
+}
+.cartRow {
+    border-bottom: 1px solid #d3d3d3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.cartElement {
+    padding-top: 40px;
+}
+.cartElement input[type=text] {
+    text-align: center;
+}
+.cartRow img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.cartSum, .totalSum {
+    font-size: 1.4em;
+    margin-top: 25px;
+}
+.cartSum span, .totalSum span {
+    font-weight: bolder;
+}
+.totalSum {
+    margin-bottom: 15px;    
+}
+.removeItemButton {
+border-radius: 50%;
+    border: none;
+    background-color: #00AEEF;
+    color: white;
+    margin-left: 5px;
+}

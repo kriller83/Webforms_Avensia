@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DCBD0DE-76FA-4620-AF83-CABFE578983C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvensiaWebShop</RootNamespace>
+    <AssemblyName>AvensiaWebShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\error1337.css" />
+    <Content Include="css\generalError.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\site.css" />
+    <Content Include="Errorrpage\1337.aspx" />
+    <Content Include="Errorrpage\GeneralError.aspx" />
+    <Content Include="Images\Annonser\annons_1.png" />
+    <Content Include="Images\Annonser\annons_2.png" />
+    <Content Include="Images\Annonser\annons_3.png" />
+    <Content Include="Images\Annonser\annons_4.png" />
+    <Content Include="Images\Annonser\annons_5.png" />
+    <Content Include="Images\Annonser\annons_6.png" />
+    <Content Include="Images\Bicycle-shot-980x400.jpg" />
+    <Content Include="Images\mountain-bike-ride_cropped500.jpg" />
+    <Content Include="Images\Purple-Bicycle_cropped500.jpg" />
+    <Content Include="Images\Sportsman_on_road_cropped500.jpg" />
+    <Content Include="Images\loggo_cropped_50x65.png" />
+    <Content Include="Images\loggo_cropped_85x65.png" />
+    <Content Include="Images\mountain-bike-downhill.jpg" />
+    <Content Include="Images\products\categories_pictures\kat_banner_accessories.png" />
+    <Content Include="Images\products\categories_pictures\kat_banner_bikes.png" />
+    <Content Include="Images\products\categories_pictures\kat_banner_clothing.png" />
+    <Content Include="Images\products\categories_pictures\kat_banner_components.png" />
+    <Content Include="Images\mountain-bike-rideCrop.jpg" />
+    <Content Include="Images\Scroll_Top_Icon.png" />
+    <Content Include="Images\Road_Biker.jpeg" />
+    <Content Include="js\error1337.js" />
+    <Content Include="js\parallax.min.js" />
+    <Content Include="js\site.js" />
+    <Content Include="js\smoothScroll.js" />
+    <Content Include="Images\Purple-Bicycle-HD-Image2.jpg" />
+    <Content Include="Images\Sportsman_on_roadCrop2.jpg" />
+    <Content Include="Kundsidor\Login.aspx" />
+    <Content Include="Kundsidor\Logout.aspx" />
+    <Content Include="Kundsidor\Register.aspx" />
+    <Content Include="Images\products\No_image_available-600px.png" />
+    <Content Include="Images\products\no_image_available_small.gif" />
+    <Content Include="js\produkter.js" />
+    <Content Include="Models\WebShopModel.edmx.sql" />
+    <Content Include="css\bekraftelsesida.css" />
+    <Content Include="TestData\Artikel.aspx" />
+    <Content Include="Bekraftelse.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\404.css" />
+    <Content Include="css\artikel.css" />
+    <Content Include="css\hem.css" />
+    <Content Include="css\kassa.css" />
+    <Content Include="css\kontakt.css" />
+    <Content Include="css\products-productView.css" />
+    <Content Include="css\products-productListView.css" />
+    <Content Include="css\products-categoryView.css" />
+    <Content Include="css\siteMaster.css" />
+    <Content Include="Errorrpage\404.aspx" />
+    <Content Include="Errorrpage\chuckEdit.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Hem.aspx" />
+    <Content Include="Images\adventure_wide.jpg" />
+    <Content Include="Images\adventure_wide_cropped.jpg" />
+    <Content Include="Images\adventure_wide_cropped_H400.jpg" />
+    <Content Include="Images\adventure_wide_cropped_H500.jpg" />
+    <Content Include="Images\products\Barn_Bla.png.jpg" />
+    <Content Include="Images\products\Barn_Rod.png.jpg" />
+    <Content Include="Images\products\Barn_Svart.png.jpg" />
+    <Content Include="Images\products\Dam_Bla.png.jpg" />
+    <Content Include="Images\products\Dam_Rod.png.jpg" />
+    <Content Include="Images\products\Dam_Svart.png.jpg" />
+    <Content Include="Images\Logga.png" />
+    <Content Include="Images\loggo_croped.png" />
+    <Content Include="Images\products\Mb_Rod_Svart.png.jpg" />
+    <Content Include="Images\products\Mb_Rod_Svart_Bak.png.jpg" />
+    <Content Include="Images\products\Mb_Rod_Svart_Fram.png.jpg" />
+    <Content Include="Images\products\Mb_Silver.png" />
+    <Content Include="Images\products\Mb_Silver_Bak.png.jpg" />
+    <Content Include="Images\products\Mb_Silver_Fram.png.jpg" />
+    <Content Include="Images\ShoppingCart2.png" />
+    <Content Include="Images\socialmedia\sm_facebook.png" />
+    <Content Include="Images\socialmedia\sm_instagram.png" />
+    <Content Include="Images\socialmedia\sm_pintrest.png" />
+    <Content Include="Images\socialmedia\sm_twitter.png" />
+    <Content Include="js\hem.js" />
+    <Content Include="js\siteMaster.js" />
+    <Content Include="Kassa.aspx" />
+    <Content Include="Kontakt.aspx" />
+    <Content Include="Notes.txt" />
+    <Content Include="Produkter.aspx" />
+    <Content Include="Models\WebShopModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WebShopModel.edmx</DependentUpon>
+      <LastGenOutput>WebShopModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\WebShopModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WebShopModel.edmx</DependentUpon>
+      <LastGenOutput>WebShopModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Models\WebShopModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WebShopModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\WebShopModel.edmx.diagram">
+      <DependentUpon>WebShopModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Media.ashx" />
+    <None Include="Properties\PublishProfiles\Binero.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="SQL Scripts\Everything.zip" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="TestKamp.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Errorrpage\1337.aspx.cs">
+      <DependentUpon>1337.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errorrpage\1337.aspx.designer.cs">
+      <DependentUpon>1337.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errorrpage\GeneralError.aspx.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errorrpage\GeneralError.aspx.designer.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kundsidor\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kundsidor\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kundsidor\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kundsidor\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kundsidor\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kundsidor\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomClasses\CartItem.cs" />
+    <Compile Include="CustomClasses\ShopingCart.cs" />
+    <Compile Include="Media.ashx.cs">
+      <DependentUpon>Media.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Kampanj.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductPhoto.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductProductPhoto.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestData\Artikel.aspx.cs">
+      <DependentUpon>Artikel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestData\Artikel.aspx.designer.cs">
+      <DependentUpon>Artikel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bekraftelse.aspx.cs">
+      <DependentUpon>Bekraftelse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bekraftelse.aspx.designer.cs">
+      <DependentUpon>Bekraftelse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\WebShopController.cs" />
+    <Compile Include="Errorrpage\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errorrpage\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hem.aspx.cs">
+      <DependentUpon>Hem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hem.aspx.designer.cs">
+      <DependentUpon>Hem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kassa.aspx.cs">
+      <DependentUpon>Kassa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kassa.aspx.designer.cs">
+      <DependentUpon>Kassa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kontakt.aspx.cs">
+      <DependentUpon>Kontakt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kontakt.aspx.designer.cs">
+      <DependentUpon>Kontakt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Address.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuildVersion.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoryDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerAddress.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ErrorLog.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductCategory.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductDiscount.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductModel.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductModelProductDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalesOrderDetail.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalesOrderHeader.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ufnGetAllCategories_Result.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ufnGetCustomerInformation_Result.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vProductCategoryWithDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Produkter.aspx.cs">
+      <DependentUpon>Produkter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produkter.aspx.designer.cs">
+      <DependentUpon>Produkter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vGetAllCategories.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vProductAndDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vProductAndDescripttionExtendedENOnly.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vProductModelCatalogDescription.cs">
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WebShopModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebShopModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WebShopModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WebShopModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebShopModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestData\TestPerson.cs" />
+    <Compile Include="TestKamp.aspx.cs">
+      <DependentUpon>TestKamp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestKamp.aspx.designer.cs">
+      <DependentUpon>TestKamp.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35185</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35185/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

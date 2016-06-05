@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.registerForm {
+    padding-top: 20px;    
+}
+
+.registerForm  .row {
+    padding: 5px;
+}
+
+.registerForm .row > div {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.registerForm .row > div [type=text], .registerForm .row > div [type=password] {
+    width: 220px;
+}
+.txtValidation {
+    color: red;
+}

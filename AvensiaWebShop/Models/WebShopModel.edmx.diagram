@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c55758bf9a6b4d0dba852d4129c61297" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="AvensiaWebshopModel.CategoryDescription" Width="1.5" PointX="6" PointY="18.125" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ErrorLog" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.Kampanj" Width="1.5" PointX="10.75" PointY="2.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductDiscount" Width="1.5" PointX="8.25" PointY="13.5" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductPhoto" Width="1.5" PointX="5.75" PointY="3" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductProductPhoto" Width="1.5" PointX="8" PointY="3.125" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.Address" Width="1.5" PointX="0.75" PointY="6.25" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.Customer" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.CustomerAddress" Width="1.5" PointX="6" PointY="6.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.Product" Width="1.5" PointX="6" PointY="12.375" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductCategory" Width="1.5" PointX="3.75" PointY="15.125" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductDescription" Width="1.5" PointX="8.75" PointY="17.125" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductModel" Width="1.5" PointX="3.75" PointY="12" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.ProductModelProductDescription" Width="1.5" PointX="11" PointY="12" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.SalesOrderDetail" Width="1.5" PointX="8.25" PointY="6.375" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.SalesOrderHeader" Width="1.5" PointX="3" PointY="4.875" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.BuildVersion" Width="1.5" PointX="12.75" PointY="2.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.vProductAndDescripttionExtendedENOnly" Width="1.5" PointX="12.75" PointY="5.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.vProductCategoryWithDescription" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.vGetAllCategories" Width="1.5" PointX="13.75" PointY="11.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.vProductAndDescription" Width="1.5" PointX="10.75" PointY="15.75" />
+        <EntityTypeShape EntityType="AvensiaWebshopModel.vProductModelCatalogDescription" Width="1.5" PointX="13.75" PointY="14.75" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_CategoryDescription_ProductCategory" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_ProductDiscount_Product" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_CustomerAddress_Address_AddressID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_SalesOrderHeader_Address_BillTo_AddressID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_SalesOrderHeader_Address_ShipTo_AddressID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_CustomerAddress_Customer_CustomerID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_SalesOrderHeader_Customer_CustomerID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_Product_ProductCategory_ProductCategoryID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_Product_ProductModel_ProductModelID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_SalesOrderDetail_Product_ProductID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_ProductModelProductDescription_ProductModel_ProductModelID" />
+        <AssociationConnector Association="AvensiaWebshopModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,75 @@
+﻿
+.loggo {
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+.orderHead {
+    padding-top: 30px;
+    border-bottom: 3px solid #00AEEF;
+}
+
+.orderId span {
+    color: #00aeef;
+}
+
+#adressbox {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.oneProduct {
+    border-bottom: 1px solid #00AEEF;
+    padding-top: 25px;
+}
+.prodTotalPrice {
+    padding: 0;
+}
+
+.produktPris {
+    text-align: right;
+}
+
+#prisBox {
+    padding: 0;
+}
+
+#prisParag {
+    font-size: 18px;
+    background-color: yellow;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.orderDetails {
+    font-size: 18px;
+}
+
+/*.mainCont {
+    margin-bottom: 20px;
+}*/
+/*.olList {
+    margin-left: -20px;
+}*/
+.addInfo {
+    font-size: 18px;
+    background-color: lightgray;
+}
+
+.infoAboutMail {
+    border-top: 1px solid #00AEEF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infoAboutMail span {
+        font-weight: bolder;
+    }
+
+#foretagsInfo {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid #00AEEF;
+}

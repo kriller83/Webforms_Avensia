@@ -1,0 +1,8 @@
+﻿Databas:
+	50 produktlinjer där [Color] är NULL.
+	83 linjer där [Size] är NULL.
+
+	Flöde för att skapa order:	1. Customer, Address > CustomerAddress (koplar Address till Customer)
+								2. SalesOrderHeader > SalesOrderDetail (koplar Product till SalesOrderHeader)
+
+

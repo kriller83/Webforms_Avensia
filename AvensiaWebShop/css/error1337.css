@@ -1,0 +1,35 @@
+﻿body {
+}
+
+#errorText {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#logga {
+
+}
+
+.btn-default {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+
+#errorImage {
+    padding-left: 10px;
+}
+
+/* basic styles for black background and crosshair cursor */
+body {
+	background: #000;
+	margin: 0;
+  color:white;
+}
+
+canvas {
+	/*cursor: crosshair;*/
+	/*display: block;*/
+    position:fixed;
+     top:0;left:0
+}

@@ -1,0 +1,33 @@
+﻿textarea {
+    resize: none;
+}*/
+
+.kontaktForm {
+    width: 100%;
+}
+.formAlert {
+    font-size: 14px;
+    color: red;
+   
+}
+.formAlertMarg {
+     margin-right: 172px;
+}
+.formField {
+    width: 30%;
+    height: 40px;
+    /*margin-right: 20px;*/
+}
+.ddlKontaktForm {
+    width: 20%;
+}
+.txtAreaKontaktForm {
+    width: 61%;
+    height: 150px;
+}
+    width: 450px;
+    height: 100px;
+}
+input[type=text] {
+    width: 200px;
+}

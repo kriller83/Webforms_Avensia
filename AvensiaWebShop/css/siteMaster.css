@@ -1,0 +1,167 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    position: relative;
+    }
+form {
+    padding-bottom: 120px;
+}
+a {
+    text-decoration: none;
+}
+
+header nav ul {
+    -webkit-padding-start: 0;
+}
+
+header nav {
+    list-style: none;
+    padding: 5px 0;
+}
+
+header nav li {
+    display: inline;
+    margin: 5px 0;
+    border-right: 2px solid lightgray;
+}
+
+
+header nav li:last-child {
+    border-right: none;
+}
+
+header nav li a {
+    font-size: 25px;
+    color: #00AEEF;
+}
+
+header nav li a:link, header nav li a:visited {
+    text-decoration: none;
+}
+
+header nav li a:hover, header nav li a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.maintitle:hover, .maintitle:active, .loggatext:hover {
+    text-decoration: none;
+}
+
+#logga {
+    max-width: 60%;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.searchFormTextBox {
+    padding-right: 0;
+}
+
+.searchFormButton {
+    padding-left: 0;
+}
+
+.searchFormButton > input {
+    width: 100%;
+}
+
+.smallTopMenu {
+    margin-top: 10px;
+}
+
+.smallTopMenu a {
+    color: #337ab7;
+}
+
+.smallTopMenu > div:first-child {
+    border-right: 1px solid lightgray;    
+}
+
+
+.smallTopMenu > div:nth-child(2) {
+    border-left: 1px solid lightgray;    
+}
+
+/* Footer */
+footer {
+    padding: 50px 0 30px 0;
+    
+}
+.footerDistance {
+    padding-bottom: 15px;
+}
+.footerPlace {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    }
+
+footer .socialmediaIcons img {
+        height: 50px;
+    }
+
+/*Mini shopingCart*/
+.pullDown {
+    display: none;
+}
+
+.manyItemsInCart, .miniCartContentEmpty  {
+    font-size: 1.3em;
+    color: #00AEEF;
+}
+
+.miniCartContentEmpty {
+    margin: 6px 8px;    
+}
+
+.minicart-wrapper {
+    position: relative;
+}
+
+.minicart-wrapper #minicart {
+    position: absolute;
+    display: none;
+    border-radius: 3px;
+    width: 350px;
+}
+
+.minicart-wrapper:hover #minicart, .minicart-wrapper #minicart.open {
+    display: block;
+    /*background-color: rgb(234,248,253);*/
+    background-color: white;
+    z-index: 5000;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    border: 3px solid #00AEEF;
+}
+
+.korgTestRep img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.minicart-wrapper:hover {
+    border-radius: 3px;
+}
+
+.minicartProductInfo {
+    margin-top: 10px;
+    color: darkgray;
+}
+
+.korgTestRep a:link, .korgTestRep a:visited {
+    text-decoration: none;
+}
+
+.korgTestRep a:hover, .korgTestRep a:active {
+    text-decoration: none;
+    color: black;
+}

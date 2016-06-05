@@ -1,0 +1,52 @@
+﻿#productListView {
+
+}
+#ProductListHeading {
+    text-align: center;
+}
+#ProductListDescription {
+    text-align: center;
+}
+#productListView select {
+    margin-left: 15px;
+}
+#chosenCategoryList img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.banner img {
+    width: 180px;
+    height: 360px;
+}
+.annons {
+    margin-bottom: 2px;
+}
+
+.filterRow {
+    margin-bottom: 20px;
+}
+
+.productListRow {
+    /*margin-top: 20px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.productListRow img {
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.productListItemDescription {
+    color: black;
+}
+
+.productListRow a:link, .productListRow a:visited, .productListRow a:hover, .productListRow a:active {
+    text-decoration: none;
+}
+
+.productListItemName a:hover, .productListItemName a:active {
+    text-decoration: none;
+    color: black;
+}
